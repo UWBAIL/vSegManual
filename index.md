@@ -49,11 +49,11 @@ The layout of the user interfaces is shown in the figures below. These are 2 mai
 
 3.1   This is the main window of the software. It allows user to load, display, segment the OCT 3D volume as well as to generate, display and save en face images of selected slabs.
 
- ![](D:\GitRepos\vSegManual\figs\pic1.png)                                          
+ ![](.\figs\pic1.png)                                          
 
 3.2   This window allows for visualization of automatic segmentation lines and manual correction if necessary. 
 
-​    ![](D:\GitRepos\vSegManual\figs\pic2.png)
+​    ![](.\figs\pic2.png)
 
  
 
