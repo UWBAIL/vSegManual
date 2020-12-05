@@ -49,11 +49,11 @@ The layout of the user interfaces is shown in the figures below. These are 2 mai
 
 3.1   This is the main window of the software. It allows user to load, display, segment the OCT 3D volume as well as to generate, display and save en face images of selected slabs.
 
- ![](./figs/pic1.png)                                          
+ ![10%](./figs/image001.png)                                          
 
 3.2   This window allows for visualization of automatic segmentation lines and manual correction if necessary. 
 
-​    ![](./figs/pic2.png)
+​    ![](./figs/image002.png)
 
  
 
@@ -89,17 +89,19 @@ This software has following features:
 
 •       Load manual segmentation file/Run auto segmentation 
 
-​    
+​    ![](./figs/image003.png)
 
 To load the OCT and OCTA data files, use the ‘Load Stru’ and ‘Load Flow’ buttons respectively. Supported formats include: avi, Zeiss img, and dicom.
+
+![](./figs/image004.png)
 
 ​      If the segmentation files are already available, use the ‘Load Seg’ button to load files with npy, mat and txt formats. If segmentation files are not available, click the button ‘Auto Segment’ to perform automatic segmentation. The progress is displayed in a separate command line window. The current software will segment 4 lines: ILM, RPE, RPE-fit and BM (required to have both the structural and flow data). You need load the structural and flow data before performing the segmentation. 
 
  
 
-   
+   ![](./figs/image005.png)
 
-​    
+​    ![](./figs/image006.png)
 
  
 
@@ -117,19 +119,19 @@ After loading videos into the workspace, the radio buttons are enabled for displ
 
 Auto-segmentation of the ILM, RPE, RPE-fit and BM are achieved by clicking the ‘Auto Segment’ button. Visualization of the segmentation lines could be achieved by either displaying 3D data as described in 4.2, or by going in to the manual correction view by clicking the ‘Manual Correct’ button.
 
- 
+![](./figs/image007.png) 
 
 **4.4** **Manual Correction of Segmentation Lines**
 
 To make manual corrections on automatic segmentation lines, user can click the ‘Manual Correct’ button to open the Segmentation Window. Users can edit segmentation lines frame by frame and add new lines. 
 
-​    
+​    ![](./figs/image008.png) 
 
  
 
 To use the manual segmentation tool, select the line that user wants to change (blue), left click the mouse and draw the line to the new location.
 
-​    
+​    ![](./figs/image009.png) 
 
  
 
@@ -137,7 +139,7 @@ After correcting segmentation lines of selected B-scans, updated segmentation fi
 
 keyboard shortcuts: 
 
- 
+ ![](./figs/image010.png) 
 
 ​    
 
@@ -149,7 +151,11 @@ To obtain *en face* projection of desired slabs, users can set the parameters in
 
  
 
-1.       Adjust the parameters in the panel of     for slab definition; the defined slab is displayed on the fast scan window between green lines. 
+	1.       Adjust the parameters in the panel for slab definition; the defined slab is displayed on the fast scan window between green lines.
+
+ ![20%](./figs/image011.png) 
+
+​	
 
 2.       Use the ‘Add’ button to add the parameters to the table.
 
