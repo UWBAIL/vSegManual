@@ -14,12 +14,15 @@ This software provides an easy graphical user interface (GUI), based on python, 
 
 **2.**    **Installation**
 
-1. Create a folder of your choice, and copy the zipped files as provided into this folder.
+2.1  Create a folder of your choice, and copy the zipped files as provided into this folder.
 
-2.       Check your computer settings. The software requires ffmpeg, elastix to properly run. If these are not available in your computer, do not worry. Double click the ‘setup.bat’ file provided in the package to set up these dependences. 
-3.       Unzip the package and run the main.exe. You are good to go!
+2.2  Check your computer settings. The software requires ffmpeg, elastix to properly run. If these are not available in your computer, do not worry. Double click the ‘setup.bat’ file provided in the package to set up these dependences. 
+
+2.3  Unzip the package and run the main.exe. You are good to go!
 
  
+
+
 
 **3.**    **Requirements of computer**
 
@@ -49,7 +52,7 @@ The layout of the user interfaces is shown in the figures below. These are 2 mai
 
 3.1   This is the main window of the software. It allows user to load, display, segment the OCT 3D volume as well as to generate, display and save en face images of selected slabs.
 
- ![10%](./figs/image001.png)                                          
+ ![](./figs/image001.png)                                          
 
 3.2   This window allows for visualization of automatic segmentation lines and manual correction if necessary. 
 
@@ -77,7 +80,7 @@ This software has following features:
 
 7.       Batch processing 
 
-**Overview and the procedures to use the software**
+**4.**    **Overview and the procedures to use the software**
 
 **4.1** **Image loader**
 
@@ -151,11 +154,11 @@ To obtain *en face* projection of desired slabs, users can set the parameters in
 
  
 
-	1.       Adjust the parameters in the panel for slab definition; the defined slab is displayed on the fast scan window between green lines.
+1.       Adjust the parameters in the panel for slab definition; the defined slab is displayed on the fast scan window between green lines.
 
  ![20%](./figs/image011.png) 
 
-​	
+
 
 2.       Use the ‘Add’ button to add the parameters to the table.
 
@@ -163,13 +166,13 @@ To obtain *en face* projection of desired slabs, users can set the parameters in
 
 4.       Click the button *Preview Current Slab* to preview the results.
 
-5.       Toggle the spin box of *Preview all* to review different slabs.    
+5.       Toggle the spin box of *Preview all* to review different slabs.    ![](./figs/image012.png) 
 
 6.       Select the row in the table and click the ‘Del’ button to remove the unwanted results.
 
 7.       Use the ‘Export setting’ button to save the projection setting. Next time, the user can import this this saved csv file by ‘Import Setting’ to configure the same settings. 
 
-​    
+​    ![](./figs/image013.png) 
 
 Explanation of projection parameters: 
 
@@ -191,9 +194,8 @@ Explanation of projection parameters:
 
 To generate proper CC slab, we recommend settings as below, 
 
- 
 
-​    
+![](./figs/image014.png) 
 
 The fist slab defines the retinal layer and the second layer defines the CC layer.
 
@@ -203,7 +205,7 @@ The fist slab defines the retinal layer and the second layer defines the CC laye
 
 The user can specify a reference segmentation line to flat the 3D volume. This function can be enabled after the segmentation is done, or if there are segmentation files available. 
 
-​    
+![](./figs/image015.png) 
 
  
 
@@ -217,11 +219,11 @@ The user can specify a reference segmentation line to flat the 3D volume. This f
 
 And then click the button ‘Save Result’.
 
-​     
+![](./figs/image016.png)    
 
 The following files will be saved in the designated folder,  
 
-​    
+![](./figs/image017.png)   
 
  
 
@@ -249,7 +251,7 @@ To use it, select the tab ‘Auto Load’ to start with. The software will detec
 
  
 
-​    
+![](./figs/image018.png)   
 
 Steps to use the batch processing mode:
 
@@ -269,9 +271,9 @@ Steps to use the batch processing mode:
 
 Open the CC quantification tool from the main panel by clicking the ‘CC quan’ button.  This tool accepts input images of OCTA CC image, OCT CC image and OCTA retina image. It performs OCTA CC compensation using OCT CC image, OCTA CC projection artifacts removal using OCTA retina image, and CC flow deficits quantification using compensated, projection artifacts removed OCTA CC image.
 
-   
+![](./figs/image019.png) 
 
-   
+![](./figs/image020.png) 
 
 **Single mode**
 
@@ -279,25 +281,24 @@ To load the specific images to quantifying the flow deficits, click the ‘load 
 
 ‘porjs_flow_1.png’, ‘projs_flow_0.png’, ‘projs_stru_1.png’
 
-​    
+![](./figs/image021.png)   
 
 **Batch mode**
 
 Add the file name rules to the batch processing tab.
 
-   
+![](./figs/image022.png) 
 
 Put the pattern of file folder name, OCTA CC image, ’load OCTA Retina’, ‘load OCT CC’ to the text editors. The * represents any characters. Then click ‘Update Rule’ to select the folder that contains your data. An example of data files and the name rules is presented below. 
 
- 
+![](./figs/image023.png) 
 
-   
 
 To process the data, select the file in the list and then click the Run Single. All click the Run Batch. 
 
 **Adjust the parameters**
 
-​    
+![](./figs/image024.png) 
 
 Usually, users may use the default parameters for quantification.
 
@@ -315,15 +316,14 @@ Fuzzy C mean K: The number of memberships used for classification, this paramete
 
 The compensation process includes OCT CC structural compensation and retinal projection artifacts removal, click the ‘Preview Comp’ button to visualize processed results. 
 
- 
 
-​    
+![](./figs/image025.png) 
 
 **Preview quantification result**
 
 Click the ‘Preview’ button to calculate the choriocapillaris flow deficits. The numerical values of flow deficit density and mean flow deficit size (µm2) as well as the binarized flow deficits map (white pixels represents flow deficits) will be displayed on the right side as shown below. Of note, in the binarized flow deficits map, individual flow deficits with an equivalent diameter smaller than 24 µm have been removed.
 
-​    
+![](./figs/image026.png)  
 
 **Save the results**
 
@@ -332,18 +332,18 @@ To save the results, click the ‘Save Results’ button. The program will creat
 Quantification results: 
 
 The file image_filename_cc_results.csv
+![](./figs/image027.png) 
 
-   
 
 Image results:
 
 The binary CC flow deficits map and the CC OCTA image after compensation. 
 
-​    
+![](./figs/image028.png) 
 
  
 
-Reference:
+**Reference:**
 
 Chu, Z., Zhou, H., Cheng, Y., Zhang, Q., & Wang, R. K. (2018). Improving visualization and quantitative assessment of choriocapillaris with swept source OCTA through registration and averaging applicable to clinical systems. Scientific reports, 8(1), 1-13.
 
